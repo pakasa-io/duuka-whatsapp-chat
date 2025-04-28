@@ -1,6 +1,6 @@
 {
   "name": "@pakasa/duuka-whatsapp-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds a whatsapp chat button to the icons menu",
   "packageManager": "yarn@4.9.0",
   "main": "bootstrap.js",
@@ -8,6 +8,7 @@
     "graphql",
     "pages",
     "bootstrap.js",
+    "constants.js",
     "!**/*.test.*"
   ],
   "sideEffects": false,
