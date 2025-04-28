@@ -1,0 +1,13 @@
+"""
+Represents a pakasa whatsapp button details
+"""
+type PakasaWhatsAppButton {
+  phoneNumber: String!
+  message: String
+  buttonText: String
+  className: String
+}
+
+extend type Query {
+  pakasaWhatsAppButton: PakasaWhatsAppButton
+}
