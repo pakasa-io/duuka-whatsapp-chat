@@ -9,11 +9,15 @@ const getConfig = (key, def) => {
 
 module.exports = {
   Query: {
-    pakasaWhatsAppButton: () => ({
-      phoneNumber: getConfig('phoneNumber', '+256700123456'),
-      message: getConfig('message', 'Hello I\'m interested in your services'),
-      buttonText: getConfig('buttonText', 'Chat'),
-      className: getConfig('className', '')
-    })
+    pakasaWhatsAppButton: () => {
+      console.log('hydrate whatsapp button details');
+
+      return {
+        phoneNumber: getConfig('phoneNumber', '+256700123456'),
+        message: getConfig('message', 'Hello I\'m interested in your services'),
+        buttonText: getConfig('buttonText', 'Chat'),
+        className: getConfig('className', '')
+      }
+    }
   }
 };
